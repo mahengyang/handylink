@@ -12,7 +12,7 @@
      {
        "matches": ["http://www.google.com.hk/*"],
        "css": ["default.css"],
-       "js": ["addLayer.js"]
+       "js": ["jquery-2.0.3.min.js","addLayer.js"]
      }
   ]
 } 
