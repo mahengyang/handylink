@@ -1,24 +1,38 @@
 .linkweb { 
 	z-index:10000;
 	width:120px; 
-	background-color:#fcfcfc;
+	background-color:none;
 	position:fixed;
-	left:5px;
+	right:15px;
 	top:200px; 
 }
+li
+{
+	list-style-type: none;
+}
+.linkweb li{
+	height: 12px;
+	padding: 0px 0px 13px 6px;
+	vertical-align: middle;
+	text-align: left;
+	background:none;
+}
+a
+{
+	color:#000;
+	text-decoration:none;
+	outline:none;
+}
 a:link {
-	color:#458B00;
 	text-decoration:none;
 }
 a:visited {
-	color:#458B00;
 	text-decoration:none;
 }
 a:hover {
-	color:#458B00;
-	text-decoration:none;
+	color:#ff0000;
+	text-decoration:underline;
 }
 a:active {
-	color:#458B00;
 	text-decoration:none;
 }
