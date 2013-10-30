@@ -1,9 +1,9 @@
 .linkweb { 
 	z-index:10000;
-	width:150px; 
-	background:#262626;
-	position:absolute;
-	left:0;
+	width:120px; 
+	background-color:#fcfcfc;
+	position:fixed;
+	left:5px;
 	top:200px; 
 }
 a:link {
