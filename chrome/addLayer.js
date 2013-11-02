@@ -11,9 +11,8 @@ $.get(user_info,function(data,status){
 	for(i in user_info){
 		console.log(user_info[i])
 		
-		li = $("<li></li>")
 		link = $("<a></a>").text(user_info[i].name).attr("href",user_info[i].url)
-		li.prepend(link).prependTo(ul)
+		$("<li></li>").prepend(link).prependTo(ul)
 	}
 	$("<div class='linkweb'></div>").prepend(ul).prependTo(document.body);
   });
