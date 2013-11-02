@@ -1,7 +1,6 @@
-#!/usr/bin/env ruby
+#!/usr/local/bin/ruby
 # -*- coding: UTF-8 -*-
 
-require 'cgi'
 require 'json'
 
 info = {
@@ -13,5 +12,5 @@ info = {
 		{name: "appinn",url: "http://www.appinn.com"},
 		]
 }
-puts 'Content-Type: application/json\n\n'
-puts info.to_json
+print 'Content-Type: application/json\n\n'
+print info.to_json
