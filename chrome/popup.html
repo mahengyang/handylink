@@ -1,3 +1,31 @@
-<div>
-	<a href="http://www.jd.com">京东商城</a>
-</div>
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="../js/popup.js"></script>
+        <link href="css/popup.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="main" style="width:400px;height:200px;">
+            <form action="form_action.asp" method="get">
+                <div id="email" class="row">
+                    <span class="rowhead">Email:</span>
+                    <input id="mailaddr" placeholder="somebody@gmail.com" left=100px></input>
+                </div>
+                <div id="url" class="row">
+                    <span class="rowhead">Url:</span>
+                    <input id="urlname" placeholder="please input url..." left=100px></input>
+                    <button type="button" id="nowpage">current page</button>
+                    <p>If more than one, please use a semicolon.</p>
+                </div>
+                <div id="location" class="row">
+                    <span  class="rowhead">Location:</span>
+                    <input type="radio">left</input>
+                    <input type="radio">right</input>
+                </div>
+                <span id="info"></span>
+                <button type="submit" onclick="">Save</button>
+            </form>
+        </div>
+    </body>
+</html>
