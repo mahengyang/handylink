@@ -11,8 +11,8 @@
   "content_scripts": [
      {
        "matches": ["http://*/*"],
-       "css": ["default.css"],
-       "js": ["jquery-2.0.3.min.js","addLayer.js"]
+       "css": ["css/default.css"],
+       "js": ["js/jquery-2.0.3.min.js","js/addLayer.js"]
      }
   ]
 } 
