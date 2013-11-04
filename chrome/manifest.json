@@ -8,9 +8,12 @@
     "default_title": "handlylink",
     "default_popup": "popup.html"
   },
+  "permissions": [
+   "tabs"
+  ],
   "content_scripts": [
      {
-       "matches": ["http://*/*"],
+       "matches": ["http://*/*", "https://*/*"],
        "css": ["css/default.css"],
        "js": ["js/jquery-2.0.3.min.js","js/addLayer.js"]
      }
