@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 
 function getCurrentPageUrl(){
-    chrome.tabs.query({'active': true}, function (tabs) {
+    chrome.tabs.query({'active': true, "currentWindow": true}, function (tabs) {
         url = "";
         try
         {
