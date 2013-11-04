@@ -6,25 +6,27 @@
         <link href="css/popup.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <div id="main" style="width:400px;height:200px;">
+        <div id="main" >
             <form action="form_action.asp" method="get">
                 <div id="email" class="row">
                     <span class="rowhead">Email:</span>
-                    <input id="mailaddr" placeholder="somebody@gmail.com" left=100px></input>
+                    <input id="mailaddr" class="info" placeholder="somebody@gmail.com"></input>
                 </div>
                 <div id="url" class="row">
                     <span class="rowhead">Url:</span>
-                    <input id="urlname" placeholder="please input url..." left=100px></input>
+                    <input id="urlname" class="info" placeholder="please input url..."></input>
                     <button type="button" id="nowpage">current page</button>
-                    <p>If more than one, please use a semicolon.</p>
                 </div>
+                <p id="hintinfo">Ps:if more than one, please use a semicolon.</p>
+                <span id="errorinfo"></span>
+                <button type="submit" onclick="">add new handylink</button>
+                <hr />
                 <div id="location" class="row">
                     <span  class="rowhead">Location:</span>
-                    <input type="radio">left</input>
-                    <input type="radio">right</input>
+                    <input type="radio" class="info" name="locationvalue" checked="checked">left</input>
+                    <input type="radio" class="info" name="locationvalue">right</input>
                 </div>
-                <span id="info"></span>
-                <button type="submit" onclick="">Save</button>
+                <button>save setting</button>
             </form>
         </div>
     </body>
