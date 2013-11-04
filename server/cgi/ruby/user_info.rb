@@ -2,15 +2,22 @@
 # -*- coding: UTF-8 -*-
 
 require 'json'
+require 'mysql2'
 
-info = {
-	enyo: [
-		{name: "百度",url: "http://www.baidu.com"},
-		{name: "新浪",url: "http://www.sina.com"},
-		{name: "搜狐",url: "http://www.sohu.com"},
-		{name: "网易",url: "http://www.163.com"},
-		{name: "appinn",url: "http://www.appinn.com"},
-		]
+mysql = Mysql2::Client.new(
+	:host => "localhost", 
+	:username => "deploy",
+	:password=>"deploy",
+	:database=>"handylink",
+	:socket=>"/tmp/mysql.sock")
+username = "default"
+result = mysql.query("select title,url from link where username='#{username}'")
+
+link_data = Array.new
+result.each { |row|
+	p row
+	link_data.push(row)
 }
-print 'Content-Type: application/json\n\n'
-print info.to_json
+
+print "Content-Type: application/json;charset=utf-8\n\n"
+print link_data.to_json
