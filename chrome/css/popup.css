@@ -1,0 +1,32 @@
+body{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.margin{
+    width: 90%;	
+}
+
+.row{
+	display: block;
+	float: left;
+	width:400px;
+	height:26px;
+	line-height: 26px;
+}
+
+.rowhead{
+	float: left;
+	display: block;
+	width:80px;
+	vertical-align: middle;
+	text-align: left;
+	line-height:24px;
+}
+
+#hintinfo{
+	font-size: 8;
+	color: red; 
+	margin: 10px 0px 0px 82px;
+	line-height:12px;
+}
