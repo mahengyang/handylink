@@ -6,7 +6,7 @@
   "browser_action": {
     "default_icon": "icon.png" ,
     "default_title": "handlylink",
-    "default_popup": "popup.html"
+    "default_popup": "html/popup.html"
   },
   "permissions": [
    "tabs"
@@ -14,6 +14,7 @@
   "content_scripts": [
      {
        "matches": ["http://*/*", "https://*/*"],
+       "exclude_matches":["http://*/*.jpg","http://*/*.pdf"],
        "css": ["css/default.css"],
        "js": ["js/jquery-2.0.3.min.js","js/addLayer.js"]
      }
