@@ -1,13 +1,14 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8"></meta>
         <script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
         <script type="text/javascript" src="../js/popup.js"></script>
-        <link href="css/popup.css" rel="stylesheet" type="text/css" />
+        <link href="../css/popup.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div id="main" >
-            <form action="form_action.asp" method="get">
+            <form action="http://angryang.com/cgi/python/addlink.py" method="get">
                 <div id="email" class="row">
                     <span class="rowhead">Email:</span>
                     <input id="mailaddr" class="info" placeholder="somebody@gmail.com"></input>
@@ -19,7 +20,7 @@
                 </div>
                 <p id="hintinfo">Ps:if more than one, please use a semicolon.</p>
                 <span id="errorinfo"></span>
-                <button type="submit" onclick="">add new handylink</button>
+                <button type="submit" id="addlink">add new handylink</button>
                 <hr />
                 <div id="location" class="row">
                     <span  class="rowhead">Location:</span>
