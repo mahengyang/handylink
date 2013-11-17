@@ -1,5 +1,4 @@
 ﻿console.log('this is from addLayer.js');
-$('#hplogo').children().text("enyo");
 
 var url = "http://angryang.com/cgi-bin/ruby/user_info.rb";
 // get user info from server

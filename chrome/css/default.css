@@ -6,8 +6,8 @@
 	right:15px;
 	top:200px; 
 }
-li
-{
+
+li{
 	list-style-type: none;
 }
 .linkweb li{
@@ -17,8 +17,8 @@ li
 	text-align: left;
 	background:none;
 }
-a
-{
+
+a{
 	color:#000;
 	text-decoration:none;
 	outline:none;
