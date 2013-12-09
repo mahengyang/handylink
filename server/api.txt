@@ -1,0 +1,54 @@
+// get handylink from server.
+url: angryang.com/cgi/ruby/user_info.rb
+
+param：
+   handle:"get" -- 固定
+   username     -- 非必须
+   mac          -- 非必须
+
+return:
+   [{url:"",title:""}, ...]
+
+   url:网址
+   title:网站标题
+
+// add new handylink.
+url:
+  angryang.com/cgi/ruby/user_info.rb
+
+param:
+  handle:"add" -- 固定
+  url:"" -- 必须
+  title:"" -- 必须
+  mac:"" -- 非必须
+  username: "" -- 非必须
+  browser_version:"" --非必须
+
+return 
+  result: 执行结果(0:成功; 0以外:失败)
+  message：错误信息
+
+
+// update an existent handylink.
+url:
+  angryang.com/cgi/ruby/user_info.rb
+
+param:
+  handle:"upd" -- 固定
+  todo
+
+return 
+  result: 执行结果(0:成功; 0以外:失败)
+  message：错误信息
+
+// delete an existent handylink.
+url:
+  angryang.com/cgi/ruby/user_info.rb
+
+param:
+  handle:"del" -- 固定
+  todo
+
+return 
+  result: 执行结果(0:成功; 0以外:失败)
+  message：错误信息
