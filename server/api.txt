@@ -11,7 +11,9 @@ return:
 
    url:网址
    title:网站标题
-
+eg:
+   http://angryang.com/cgi/ruby/user_info.rb?handle=get
+   
 // add new handylink.
 url:
   angryang.com/cgi/ruby/user_info.rb
@@ -27,6 +29,9 @@ param:
 return 
   result: 执行结果(0:成功; 0以外:失败)
   message：错误信息
+
+eg:
+  http://angryang.com/cgi/ruby/user_info.rb?handle=add&url=www.taobao.com&title=%E6%B7%98%E5%AE%9D&mac=default
 
 
 // update an existent handylink.
