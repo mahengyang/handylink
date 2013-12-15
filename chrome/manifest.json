@@ -16,7 +16,7 @@
   "content_scripts": [
      {
        "matches": ["http://*/*", "https://*/*"],
-       "exclude_matches":["http://*/*.jpg","http://*/*.pdf"],
+       "exclude_matches":["http://*/*.jpg","http://*/*.pdf","http://*/*.png","http://*/*.ico"],
        "css": ["css/default.css"],
        "js": ["js/jquery-2.0.3.min.js","js/addLayer.js"]
      }
