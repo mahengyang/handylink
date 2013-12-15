@@ -19,9 +19,13 @@
 	padding: 0px 0px 0px 0px;
     margin-top: 10px;
     margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .linkweb ul li{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 	list-style-type: none;
 	vertical-align: middle;
     padding-bottom: 5px;
