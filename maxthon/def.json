@@ -1,0 +1,40 @@
+﻿[
+    {
+        "type": "extension",
+		"frameworkVersion":"1.0.1",
+		"version":"1.0.0",
+        "guid": "{e61e3ac4-f1dd-4763-aa4c-3c6d8ff09c85}",
+        "author":{
+            "name":"mahengyang",
+            "email":"hengyangma@gmail.com"
+            },
+        "name": "handylink",
+        "title": {
+            "en": "handylink",
+            "zh-cn": "边链"
+        },
+        "description":{
+            "en":"Perfect favorite",
+            "zh-cn":"收藏夹的完美补充"
+            },
+        "permissions":{
+            "httpRequest":["*"]
+            },
+        "actions": [
+            {
+                "type": "script",
+                "entryPoints": [
+                    "doc_start"
+                ],
+                "exclude":[
+                    "*.png"
+                ],
+                "js":[
+                    "js/jquery-2.0.3.min.js",
+                    "js/addLayer.js"
+                ],
+                "includeFrames": false
+            }
+        ]
+    }
+]

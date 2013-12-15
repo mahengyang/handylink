@@ -1,0 +1,56 @@
+.linkweb { 
+	z-index:19999;
+	position:fixed;
+	right:0px;
+	top:200px; 
+    width: 80px;
+    font-family: 微软雅黑;
+    color: #D32525;
+    opacity: 0.6;
+    font-size: 20px;
+    background-color: black;
+}
+.linkweb .header {
+    height: 10px;
+    background-color: red;
+}
+
+.linkweb ul {
+	padding: 0px 0px 0px 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.linkweb ul li{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	list-style-type: none;
+	vertical-align: middle;
+    padding-bottom: 5px;
+	text-align: center;
+}
+
+.linkweb ul li a{
+	font-size: 20px;
+	color: white;
+	text-decoration:none;
+	outline:none;
+}
+.linkweb ul li a:link {
+	color: white;
+	text-decoration:none;
+}
+.linkweb ul li a:visited {
+	color: white;
+	text-decoration:none;
+}
+.linkweb ul li a:hover {
+	color:#00aa00;
+	text-decoration:underline;
+}
+.linkweb ul li a:active {
+	color: white;
+	text-decoration:none;
+}
