@@ -1,6 +1,7 @@
 ﻿console.log('this is from addLayer.js');
 
 var url = "http://angryang.com/cgi-bin/ruby/user_info.rb?handle=get";
+border = $("<div class='header'></div>")
 // get user info from server
 $.get(url,function(data,status){
 	console.log("response from server")
@@ -13,5 +14,5 @@ $.get(url,function(data,status){
 		link = $("<a></a>").text(data[i].title).attr("href",data[i].url)
 		$("<li></li>").prepend(link).prependTo(ul)
 	}
-	$("<div class='linkweb'></div>").prepend(ul).prependTo(document.body);
+	$("<div class='linkweb'><div class='header'></div></div>").prepend(ul).prepend(border).prependTo(document.body);
   });
