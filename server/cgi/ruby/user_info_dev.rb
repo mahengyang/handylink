@@ -5,6 +5,7 @@ require "json"
 require "cgi"
 require "mysql2"
 require "logger"
+require "./client"
 
 class SqlManage
   
@@ -136,6 +137,19 @@ class SqlManage
 end
 
 print "Content-Type: application/json;charset=utf-8\n\n"
+
+def writeVisitLog
+    infokeys = Array.new
+    infokeys.push("HTTP_USER_AGENT")
+    infokeys.push("REMOTE_ADDR")
+    infovalues = ClientInfo.GetInfo(infokeys)
+    
+    logFile_Visit = "./logs/visit/client.log"
+    visit = Logger.new logFile_Visit
+    visit.info(infovalues)
+end
+
+writeVisitLog()
 
 # add request log
 $cgi = CGI.new 
