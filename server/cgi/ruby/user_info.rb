@@ -135,7 +135,7 @@ class SqlManage
   end
 end
 
-print "Content-Type: application/json;charset=utf-8\n\n"
+print "Content-Type: application/json;charset=utf-8\r\n\r\n"
 
 # add request log
 $cgi = CGI.new 
